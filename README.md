@@ -83,13 +83,3 @@ See `docs/CUSTOMIZATION.md` for the full guide.
 
 ---
 
-## Browser support
-
-Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
-
----
-
-## License
-
-Single-site license. See `LICENSE.txt` for full terms.  
-© 2026 Clarix  Template Author
