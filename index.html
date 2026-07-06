@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-theme-color="indigo">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Clarix  — The all-in-one analytics platform for modern teams. Real-time dashboards, AI insights, and 200+ integrations." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-domain.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://your-domain.com/" />
+  <meta property="og:title"       content="Clarix  — Analytics for Modern Teams" />
+  <meta property="og:description" content="Track, visualize, and act on your metrics in real time. AI-powered insights, 200+ integrations, and beautiful dashboards." />
+  <meta property="og:image"       content="https://your-domain.com/assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Clarix  — Analytics for Modern Teams" />
+  <meta name="twitter:description" content="The all-in-one analytics platform for modern teams." />
+  <meta name="twitter:image"       content="https://your-domain.com/assets/images/og-image.png" />
+
+  <title>Clarix  — Analytics for Modern Teams</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/themes.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Clarix  home">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A4.5 4.5 0 0117 16H6z" fill="url(#g)"/>
+          <defs><linearGradient id="g" x1="0" y1="0" x2="24" y2="24">
+            <stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/>
+          </linearGradient></defs>
+        </svg>
+        <span>Clarix </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a href="#features"     class="nav__link">Features</a></li>
+          <li><a href="#pricing"      class="nav__link">Pricing</a></li>
+          <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li><a href="#faq"          class="nav__link">FAQ</a></li>
+          <li><a href="about.html"    class="nav__link">About</a></li>
+          <li><a href="contact.html"  class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="search-toggle" id="searchToggle" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="#pricing" class="btn btn--primary btn--sm">Get Started</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <input type="text" id="searchInput" placeholder="Search features, pricing, FAQ…" aria-label="Search features" />
+        <ul class="search-results" id="searchResults"></ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__content reveal">
+        <span class="badge">🚀 New: AI-powered insights</span>
+        <h1 class="hero__title">Turn your data into <span class="gradient-text">decisions</span></h1>
+        <p class="hero__subtitle">Clarix  is the all-in-one analytics platform that helps modern teams track, visualize, and act on their metrics in real time.</p>
+        <div class="hero__cta">
+          <a href="#pricing" class="btn btn--primary">Start free trial</a>
+          <a href="#features" class="btn btn--ghost">See how it works →</a>
+        </div>
+        <div class="hero__stats">
+          <div><strong>12k+</strong><span>Active teams</span></div>
+          <div><strong>99.9%</strong><span>Uptime</span></div>
+          <div><strong>4.9/5</strong><span>Rating</span></div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal">
+        <div class="mock-dashboard">
+          <!-- Header row -->
+          <div class="mock-dash-header">
+            <div class="mock-dash-title">
+              <div class="mock-dot" style="background:#22c55e"></div>
+              <div class="mock-line-text" style="width:90px"></div>
+            </div>
+            <div class="mock-line-text" style="width:50px; opacity:.4"></div>
+          </div>
+
+          <!-- KPI row -->
+          <div class="mock-kpi-row">
+            <div class="mock-kpi">
+              <div class="mock-kpi-label"></div>
+              <div class="mock-kpi-value gradient-text">$84.2k</div>
+              <div class="mock-kpi-delta up">↑ 12.4%</div>
+            </div>
+            <div class="mock-kpi">
+              <div class="mock-kpi-label"></div>
+              <div class="mock-kpi-value">3,891</div>
+              <div class="mock-kpi-delta up">↑ 8.1%</div>
+            </div>
+            <div class="mock-kpi">
+              <div class="mock-kpi-label"></div>
+              <div class="mock-kpi-value">94.2%</div>
+              <div class="mock-kpi-delta down">↓ 1.2%</div>
+            </div>
+          </div>
+
+          <!-- Chart area -->
+          <div class="mock-chart-area">
+            <div class="mock-bars-wrap">
+              <div class="mock-bar" style="--h:55%"></div>
+              <div class="mock-bar" style="--h:72%"></div>
+              <div class="mock-bar" style="--h:48%"></div>
+              <div class="mock-bar" style="--h:88%"></div>
+              <div class="mock-bar" style="--h:65%"></div>
+              <div class="mock-bar" style="--h:95%"></div>
+              <div class="mock-bar" style="--h:78%"></div>
+            </div>
+            <div class="mock-line-overlay">
+              <svg viewBox="0 0 200 80" preserveAspectRatio="none" fill="none">
+                <polyline points="0,60 33,45 66,52 100,28 133,38 166,15 200,22"
+                  stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="100" cy="28" r="3" fill="var(--accent)"/>
+                <circle cx="166" cy="15" r="3" fill="var(--accent)"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Table rows -->
+          <div class="mock-table">
+            <div class="mock-row">
+              <div class="mock-avatar" style="background:var(--gradient)"></div>
+              <div class="mock-line-text" style="width:70px"></div>
+              <div class="mock-line-text" style="width:40px;margin-left:auto"></div>
+              <div class="mock-badge up-badge">Active</div>
+            </div>
+            <div class="mock-row">
+              <div class="mock-avatar" style="background:linear-gradient(135deg,#0ea5e9,#06b6d4)"></div>
+              <div class="mock-line-text" style="width:90px"></div>
+              <div class="mock-line-text" style="width:40px;margin-left:auto"></div>
+              <div class="mock-badge up-badge">Active</div>
+            </div>
+            <div class="mock-row">
+              <div class="mock-avatar" style="background:linear-gradient(135deg,#10b981,#14b8a6)"></div>
+              <div class="mock-line-text" style="width:60px"></div>
+              <div class="mock-line-text" style="width:40px;margin-left:auto"></div>
+              <div class="mock-badge neutral-badge">Idle</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LOGO STRIP ============ -->
+  <section class="logo-strip">
+    <div class="container">
+      <p class="logo-strip__label">Trusted by teams at</p>
+      <div class="logo-strip__logos">
+        <!-- Wordmark-style SVG logos — placeholder brand names -->
+        <svg class="brand-logo" viewBox="0 0 80 24" aria-label="Flowbase">
+          <text x="0" y="18" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="currentColor">Flowbase</text>
+        </svg>
+        <svg class="brand-logo" viewBox="0 0 68 24" aria-label="Payloop">
+          <text x="0" y="18" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="currentColor">Payloop</text>
+        </svg>
+        <svg class="brand-logo" viewBox="0 0 36 24" aria-label="Kite">
+          <text x="0" y="18" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="currentColor">Kite</text>
+        </svg>
+        <svg class="brand-logo" viewBox="0 0 74 24" aria-label="Stackwise">
+          <text x="0" y="18" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="currentColor">Stackwise</text>
+        </svg>
+        <svg class="brand-logo" viewBox="0 0 56 24" aria-label="Lumina">
+          <text x="0" y="18" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="currentColor">Lumina</text>
+        </svg>
+        <svg class="brand-logo" viewBox="0 0 56 24" aria-label="Orbitly">
+          <text x="0" y="18" font-family="Inter,sans-serif" font-weight="700" font-size="14" fill="currentColor">Orbitly</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Everything you need to grow</h2>
+        <p>Powerful tools designed to help your team move faster and make smarter decisions.</p>
+      </div>
+
+      <div class="features__grid" id="featuresGrid">
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/><polyline points="7 13 10 10 13 13 17 8"/></svg>
+          </div>
+          <h3>Real-time Analytics</h3>
+          <p>Watch your metrics update live with zero delay. Spot trends the moment they happen.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          </div>
+          <h3>Enterprise Security</h3>
+          <p>SOC 2 compliant with end-to-end encryption. Your data stays yours, always.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3>Blazing Fast</h3>
+          <p>Sub-second queries across billions of rows. Performance that never holds you back.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/><path d="M16.24 7.76l-1.42 1.42M7.76 16.24l1.42-1.42M7.76 7.76l1.42 1.42M16.24 16.24l-1.42-1.42"/><circle cx="12" cy="12" r="2" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>AI Insights</h3>
+          <p>Automatic anomaly detection and forecasts. Let your data tell you what matters next.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <h3>200+ Integrations</h3>
+          <p>Connect the tools your team already uses — from Slack to Salesforce to custom APIs.</p>
+        </article>
+        <article class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3>Mobile Ready</h3>
+          <p>Full dashboards on any device, anywhere. No compromises on the go.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TABS (Product tour) ============ -->
+  <section class="section tabs-section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Product Tour</span>
+        <h2>One platform, endless possibilities</h2>
+      </div>
+      <div class="tabs reveal" id="tabs">
+        <div class="tabs__nav" role="tablist">
+          <button class="tab-btn active" data-tab="0" role="tab" aria-selected="true">Dashboards</button>
+          <button class="tab-btn" data-tab="1" role="tab" aria-selected="false">Reports</button>
+          <button class="tab-btn" data-tab="2" role="tab" aria-selected="false">Alerts</button>
+        </div>
+        <div class="tabs__panels">
+          <div class="tab-panel active" data-panel="0"><h3>Beautiful Dashboards</h3><p>Drag-and-drop widgets to build the exact view your team needs. Share with a single link — no login required for viewers.</p></div>
+          <div class="tab-panel" data-panel="1"><h3>Automated Reports</h3><p>Schedule reports to land in your inbox or Slack daily, weekly, or monthly. Zero manual effort after setup.</p></div>
+          <div class="tab-panel" data-panel="2"><h3>Smart Alerts</h3><p>Get notified the moment a metric crosses a threshold you care about — via Slack, email, or webhook.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>Simple, transparent pricing</h2>
+        <p>Choose the plan that fits your team. No hidden fees, ever.</p>
+      </div>
+      <div class="pricing__grid">
+        <article class="price-card reveal">
+          <h3>Starter</h3>
+          <p class="price-card__price">$0<span>/mo</span></p>
+          <p class="price-card__desc">For individuals getting started.</p>
+          <ul>
+            <li>✔ 1 project</li>
+            <li>✔ 7-day history</li>
+            <li>✔ Community support</li>
+            <li class="muted">✘ AI insights</li>
+          </ul>
+          <a href="contact.html" class="btn btn--ghost btn--block">Get started free</a>
+        </article>
+        <article class="price-card price-card--featured reveal">
+          <span class="price-card__badge">Most Popular</span>
+          <h3>Pro</h3>
+          <p class="price-card__price">$29<span>/mo</span></p>
+          <p class="price-card__desc">For growing teams that move fast.</p>
+          <ul>
+            <li>✔ Unlimited projects</li>
+            <li>✔ 1-year history</li>
+            <li>✔ Priority support</li>
+            <li>✔ AI insights</li>
+          </ul>
+          <a href="contact.html" class="btn btn--primary btn--block">Start free trial</a>
+        </article>
+        <article class="price-card reveal">
+          <h3>Enterprise</h3>
+          <p class="price-card__price">Custom</p>
+          <p class="price-card__desc">For large organizations with specific needs.</p>
+          <ul>
+            <li>✔ Everything in Pro</li>
+            <li>✔ SSO &amp; SAML</li>
+            <li>✔ Dedicated manager</li>
+            <li>✔ Custom SLA</li>
+          </ul>
+          <a href="contact.html" class="btn btn--ghost btn--block">Contact sales</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS CAROUSEL ============ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section__head reveal"><span class="eyebrow">Testimonials</span><h2>Loved by teams worldwide</h2></div>
+      <div class="carousel reveal" id="carousel">
+        <div class="carousel__track" id="carouselTrack">
+          <blockquote class="testimonial"><p>"Clarix  cut our reporting time from days to minutes. Absolute game changer for our ops team."</p><footer><strong>Sara Kim</strong> · CTO, Flowbase</footer></blockquote>
+          <blockquote class="testimonial"><p>"The AI insights caught a churn spike before we even noticed. It literally saved our quarter."</p><footer><strong>James Lee</strong> · Head of Growth, Payloop</footer></blockquote>
+          <blockquote class="testimonial"><p>"Setup took 10 minutes. Our whole team was onboarded the same day. That never happens."</p><footer><strong>Ana Duarte</strong> · Ops Lead, Kite</footer></blockquote>
+          <blockquote class="testimonial"><p>"We evaluated 5 platforms. Clarix  was the only one that our data team and our CEO both loved."</p><footer><strong>Derek Osei</strong> · VP Engineering, Stackwise</footer></blockquote>
+        </div>
+        <button class="carousel__btn carousel__btn--prev" id="prevBtn" aria-label="Previous testimonial">‹</button>
+        <button class="carousel__btn carousel__btn--next" id="nextBtn" aria-label="Next testimonial">›</button>
+        <div class="carousel__dots" id="carouselDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section faq" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head reveal"><span class="eyebrow">FAQ</span><h2>Frequently asked questions</h2></div>
+      <div class="accordion" id="accordion">
+        <div class="accordion__item reveal">
+          <button class="accordion__header">Can I cancel anytime?<span class="accordion__icon">+</span></button>
+          <div class="accordion__body"><p>Yes. There are no contracts — cancel with one click from your dashboard. We'll even prorate any unused days.</p></div>
+        </div>
+        <div class="accordion__item reveal">
+          <button class="accordion__header">Is there a free trial?<span class="accordion__icon">+</span></button>
+          <div class="accordion__body"><p>Every paid plan comes with a 14-day free trial. No credit card required to get started.</p></div>
+        </div>
+        <div class="accordion__item reveal">
+          <button class="accordion__header">Do you offer discounts for startups?<span class="accordion__icon">+</span></button>
+          <div class="accordion__body"><p>Yes! Qualified startups get 50% off for the first year. Reach out to our sales team with your company details.</p></div>
+        </div>
+        <div class="accordion__item reveal">
+          <button class="accordion__header">Where is my data stored?<span class="accordion__icon">+</span></button>
+          <div class="accordion__body"><p>Data is stored in SOC 2 compliant data centres with regional options available — US, EU, and APAC.</p></div>
+        </div>
+        <div class="accordion__item reveal">
+          <button class="accordion__header">Can I export my data?<span class="accordion__icon">+</span></button>
+          <div class="accordion__body"><p>Absolutely. You can export any dataset as CSV, JSON, or via our API at any time. Your data is always yours.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="section newsletter">
+    <div class="container newsletter__inner reveal">
+      <div><h2>Stay in the loop</h2><p>Product updates, tips, and news. No spam, ever.</p></div>
+      <form class="newsletter__form" id="newsletterForm" novalidate>
+        <input type="email" id="newsletterEmail" placeholder="you@company.com" aria-label="Your email address" />
+        <button type="submit" class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--light">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 16a4 4 0 010-8 5 5 0 019.6-1.5A4.5 4.5 0 0117 16H6z" fill="url(#gf)"/>
+            <defs><linearGradient id="gf" x1="0" y1="0" x2="24" y2="24">
+              <stop stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/>
+            </linearGradient></defs>
+          </svg>
+          <span>Clarix </span>
+        </a>
+        <p>Analytics for modern teams.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="contact.html">Security</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Clarix  Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Color switcher (floating) -->
+  <div class="color-switcher-wrap" id="colorSwitcher" aria-label="Change color theme">
+    <button class="color-switcher-trigger" id="colorSwitcherTrigger" aria-label="Open theme switcher" title="Switch color theme">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 010 20"/><path d="M2 12h10"/></svg>
+    </button>
+    <div class="color-switcher-panel" id="colorSwitcherPanel">
+      <p class="color-switcher-label">Color theme</p>
+      <div class="color-swatches">
+        <button data-color="indigo"  class="swatch active" style="background:linear-gradient(135deg,#6366f1,#a855f7)" title="Indigo" aria-label="Indigo theme"></button>
+        <button data-color="ocean"   class="swatch" style="background:linear-gradient(135deg,#0ea5e9,#06b6d4)" title="Ocean"  aria-label="Ocean theme"></button>
+        <button data-color="emerald" class="swatch" style="background:linear-gradient(135deg,#10b981,#14b8a6)" title="Emerald" aria-label="Emerald theme"></button>
+        <button data-color="sunset"  class="swatch" style="background:linear-gradient(135deg,#f97316,#ec4899)" title="Sunset"  aria-label="Sunset theme"></button>
+        <button data-color="rose"    class="swatch" style="background:linear-gradient(135deg,#f43f5e,#fb7185)" title="Rose"    aria-label="Rose theme"></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/form.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
