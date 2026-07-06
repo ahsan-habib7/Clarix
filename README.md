@@ -2,7 +2,7 @@
 
 A clean, modern, fully responsive HTML/CSS/JS landing page template for SaaS and analytics products. Zero frameworks, zero build tools — open the folder and it just works.
 
-**[→ Live Demo](https://your-demo-url.com)** &nbsp;·&nbsp; **[Buy on Gumroad](#)**
+**[→ Live Demo](https://your-demo-url.com)** 
 
 ---
 
